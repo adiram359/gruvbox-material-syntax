@@ -5,17 +5,19 @@ Optimal O(nlogn) Solution:
 """
 
 def numRescueBoats(people, limit):
-        people.sort()
-        num_boats = 0
-        left, right = 0, len(people) - 1
+    people.sort()
+    num_boats = 0
+    left, right = 0, len(people) - 1
 
-        while left <= right:
-            if people[left] + people[right] <= limit:
-                left += 1
-            num_boats += 1
-            right -= 1
+    while left <= right:
+        if people[left] + people[right] <= limit:
+            left += 1
+        num_boats += 1
+        right -= 1
 
-        return num_boats
+    return num_boats
+
+
 class Solution:
 
     def numRescueBoats(self, people, limit):
@@ -72,15 +74,9 @@ class Solution:
         return i
 
 
+    
+
 
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
-
-
-
-
-
-
-    

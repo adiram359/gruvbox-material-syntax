@@ -78,12 +78,17 @@ atom-text-editor {
   }
 }
 
+
 .syntax--storage {
   color: @purple;
 }
 
+
+
+
+
 .syntax--constant {
-  color: @orange;
+  color: @yellow;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
@@ -195,7 +200,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @syntax-text-color;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @aqua;
@@ -295,13 +300,7 @@ atom-text-editor {
 }
 
 
-.syntax--source.syntax--python {
-  .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
-    color: @yellow;
-  }
 
-
-}
 
 
 
@@ -309,4 +308,38 @@ atom-text-editor {
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+
+
+
+
+
+
+// Python
+.syntax--source.syntax--python {
+  .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+    color: @orange;
+  }
+}
+
+// Go
+.syntax--source.syntax--go {
+  .syntax--type {
+    color: @yellow;
+  }
+  .syntax--struct {
+    color: @orange;
+  }
+  .syntax--property {
+    color: @syntax-text-color;
+  }
+  
+
+
+
+  // .syntax--storage.syntax--type.syntax--string {
+  //     color: @yellow;
+  // }
+
 }
