@@ -62,7 +62,7 @@ atom-text-editor {
   color: @purple;
 
   &.syntax--control {
-    color: @purple;
+    color: @red;
   }
 
   &.syntax--operator {
@@ -90,7 +90,7 @@ atom-text-editor {
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @purple;
   }
 
   &.syntax--other.syntax--color {
@@ -151,7 +151,7 @@ atom-text-editor {
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @green;
     }
 
     &.syntax--bold {
@@ -177,7 +177,7 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @yellow;
 
     &.syntax--any-method {
       color: @blue;
@@ -187,18 +187,19 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @aqua;
+
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @aqua;
+    font-weight: bold;
   }
 
   &.syntax--name.syntax--section {
@@ -292,6 +293,16 @@ atom-text-editor {
     color: @green;
   }
 }
+
+
+.syntax--source.syntax--python {
+  .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+    color: @yellow;
+  }
+
+
+}
+
 
 
 // Mini editor
