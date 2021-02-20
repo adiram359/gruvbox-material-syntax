@@ -1,8 +1,8 @@
 {
-  "name": "gruvbox material",
+  "name": "gruvbox-material",
   "theme": "syntax",
   "version": "0.1.1",
-  "description": "A gruvbox material syntax theme",
+  "description": "A gruvbox-material syntax theme",
   "keywords": [
     "syntax",
     "theme"
